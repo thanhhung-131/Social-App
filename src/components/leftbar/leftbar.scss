@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.leftbar {
+    .container {
+        padding: 20px;
+
+        hr{
+            border: none;
+            height: 0.5px;
+            background-color: lightgrey;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            span {
+                font-size: 12px;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                span {
+
+                }
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 20px;
+                }
+
+                span {}
+            }
+        }
+    }
+}
