@@ -1,21 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .leftbar {
+    flex: 2;
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     .container {
         padding: 20px;
 
-        hr{
+        hr {
             border: none;
             height: 0.5px;
             background-color: lightgrey;
         }
+
         .menu {
             display: flex;
             flex-direction: column;
             gap: 16px;
+
             span {
                 font-size: 12px;
             }
@@ -26,14 +37,14 @@
                 gap: 10px;
 
                 img {
-                    width: 20px;
-                    height: 20px;
+                    width: 24px;
+                    height: 24px;
                     border-radius: 50%;
                     object-fit: cover;
                 }
 
                 span {
-
+                    font-size: 14px;
                 }
             }
 
@@ -43,10 +54,12 @@
                 gap: 10px;
 
                 img {
-                    width: 20px;
+                    width: 24px;
                 }
 
-                span {}
+                span {
+                    font-size: 14px;
+                }
             }
         }
     }

@@ -32,7 +32,7 @@ const Navbar = () => {
             src='https://i.pinimg.com/564x/75/43/fd/7543fdb969708432716ec83b223b34fc.jpg'
             alt=''
           />
-          <span>Backstep Doe</span>
+          <span>Daiki Doe</span>
         </div>
       </div>
     </div>
