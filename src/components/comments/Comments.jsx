@@ -24,7 +24,11 @@ const Comments = () => {
         {comments.map(comment => (
             <div className="comment" key={comment.id}>
                 <img src={comment.profilePicture} alt={comment.name} />
-
+                <div className="info">
+                    <span>{comment.name}</span>
+                    <p>{comment.description}</p>
+                </div>
+                <span className='date'>1 hour ago</span>
             </div>
         ))}
     </div>
