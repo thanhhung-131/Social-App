@@ -10,27 +10,27 @@ const RightBar = () => {
           <div className='user'>
             <div className='userInfo'>
               <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
+                src='https://i.pinimg.com/564x/df/24/6e/df246e9f351f560391275e24f625196f.jpg'
                 alt=''
               />
               <span>Backstep Doe</span>
             </div>
             <div className='buttons'>
-              <button>Add Friend</button>
-              <button>Remove</button>
+              <button>follow</button>
+              <button>dismiss</button>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
               <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
+                src='https://i.pinimg.com/564x/df/24/6e/df246e9f351f560391275e24f625196f.jpg'
                 alt=''
               />
               <span>Backstep Doe</span>
             </div>
             <div className='buttons'>
-              <button>Add Friend</button>
-              <button>Remove</button>
+              <button>follow</button>
+              <button>dismiss</button>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ const RightBar = () => {
           <div className='user'>
             <div className='userInfo'>
               <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
+                src='https://i.pinimg.com/564x/df/24/6e/df246e9f351f560391275e24f625196f.jpg'
                 alt=''
               />
               <p>
@@ -51,7 +51,7 @@ const RightBar = () => {
           <div className='user'>
             <div className='userInfo'>
               <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
+                src='https://i.pinimg.com/564x/df/24/6e/df246e9f351f560391275e24f625196f.jpg'
                 alt=''
               />
               <p>
@@ -66,37 +66,10 @@ const RightBar = () => {
           <div className='user'>
             <div className='userInfo'>
               <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
+                src='https://i.pinimg.com/564x/df/24/6e/df246e9f351f560391275e24f625196f.jpg'
                 alt=''
               />
-              <span>Backstep Doe</span>
-            </div>
-          </div>
-          <div className='user'>
-            <div className='userInfo'>
-              <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
-                alt=''
-              />
-              <span>Backstep Doe</span>
-            </div>
-          </div>
-          <div className='user'>
-            <div className='userInfo'>
-              <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
-                alt=''
-              />
-              <span>Backstep Doe</span>
-            </div>
-          </div>
-          <div className='user'>
-            <div className='userInfo'>
-              <img
-                src='https://i.pinimg.com/564x/73/0f/5b/730f5b9008237c6f37de125a39b33392.jpg'
-                alt=''
-              />
-              <div className="online"></div>
+              <div className="online"/>
               <span>Backstep Doe</span>
             </div>
           </div>

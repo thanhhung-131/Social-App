@@ -1,82 +1,101 @@
+@import "../../style.scss";
+
 .rightbar {
-    flex: 3;
-    position: sticky;
-    top: 70px;
-    height: calc(100vh - 70px);
-    overflow: scroll;
+    @include themify($themes) {
+        flex: 3;
+        position: sticky;
+        top: 50px;
+        height: calc(100vh - 50px);
+        overflow: scroll;
+        background-color: themed('bgSoft');
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
-    .container {
-        padding: 20px;
+        .container {
+            padding: 16px;
 
-        .item {
+            .item {
 
-            -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
-            -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
-            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 4px;
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+                box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                background-color: themed('bg');
 
-            span {
-                color: grey;
-            }
+                span {
+                    color: gray;
+                }
 
-            .user {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 10px 0;
-
-                .userInfo {
+                .user {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
-                    font-weight: 500;
+                    justify-content: space-between;
+                    margin: 10px 0;
 
-                    img {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                    }
-
-                    p{
-                        color: grey;
-                    }
-
-                    span {
-                        color: #000;
+                    .userInfo {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
                         font-weight: 500;
+                        position: relative;
+
+                        .online {
+                            top: 0;
+                            left: 20px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: limegreen;
+                            position: absolute;
+                        }
+
+                        img {
+                            flex-shrink: 0;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        p {
+                            color: themed('textColorSoft');
+                            font-weight: 400;
+                        }
+
+                        span {
+                            color: themed('textColor');
+                            font-weight: 500;
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            padding: 5px;
+                            cursor: pointer;
+
+                            &:first-child {
+                                background-color: #367BD8;
+                            }
+
+                            &:last-child {
+                                background-color: #e4514c;
+                            }
+                        }
                     }
                 }
 
-                .buttons {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    button {
-                        border: none;
-                        border-radius: 2px;
-                        color: white;
-                        padding: 5px;
-                        cursor: pointer;
-
-                        &:first-child {
-                            background-color: #367BD8;
-                        }
-
-                        &:last-child {
-                            background-color: #e4514c;
-                        }
-                    }
-                }
             }
-
         }
     }
 }

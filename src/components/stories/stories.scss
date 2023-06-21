@@ -1,0 +1,66 @@
+.stories {
+    display: flex;
+    gap: 10px;
+    height: 180px;
+    margin-bottom: 30px;
+  
+    .story {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+  
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+      &:hover {
+  
+        img {
+          transform: scale(1.05);
+        }
+      }
+  
+      span {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #fff;
+        font-weight: 400;
+      }
+  
+      button {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        bottom: 32px;
+        left: 10px;
+        color: #fff;
+        background-color: #5271ff;
+        border: none;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+  
