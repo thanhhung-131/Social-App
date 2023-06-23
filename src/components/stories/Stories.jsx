@@ -27,11 +27,6 @@ const Stories = () => {
       name: 'Daiki Doe',
       img: 'https://i.pinimg.com/564x/cd/a5/bc/cda5bc3e727730a271c7cd46f2e8b401.jpg'
     },
-    {
-      id: 5,
-      name: 'Daiki Doe',
-      img: 'https://i.pinimg.com/564x/cd/a5/bc/cda5bc3e727730a271c7cd46f2e8b401.jpg'
-    }
   ]
   return (
     <div className='stories'>

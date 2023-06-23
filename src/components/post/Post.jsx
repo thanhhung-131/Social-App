@@ -1,15 +1,18 @@
 import './post.scss'
 import { Link } from 'react-router-dom'
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined'
-import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined'
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined'
+import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
+import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined'
+import Comments from '../comments/Comments'
+import { useState } from 'react'
 
 const Post = ({ post }) => {
+  const [commentOpen, setCommentOpen] = useState(false)
 
-    // Temporary
-    const liked = false;
+  // Temporary
+  const liked = false
 
   return (
     <div className='post'>
@@ -30,23 +33,24 @@ const Post = ({ post }) => {
           <MoreHorizOutlinedIcon />
         </div>
         <div className='content'>
-            <p>{post.description}</p>
-            <img src={post.img} alt="" />
+          <p>{post.description}</p>
+          <img src={post.img} alt='' />
         </div>
         <div className='info'>
-            <div className="item">
-                {liked ? <FavoriteOutlinedIcon/> : <FavoriteBorderOutlinedIcon/>}
-                12 Likes
-            </div>
-            <div className="item">
-                <TextsmsOutlinedIcon/>
-                12 Comments
-            </div>
-            <div className="item">
-                <ShareOutlinedIcon/>
-                Share
-            </div>
+          <div className='item'>
+            {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+            12 Likes
+          </div>
+          <div className='item' onClick={() => setCommentOpen(!commentOpen)}>
+            <TextsmsOutlinedIcon />
+            12 Comments
+          </div>
+          <div className='item'>
+            <ShareOutlinedIcon />
+            Share
+          </div>
         </div>
+        {commentOpen && <Comments />}
       </div>
     </div>
   )

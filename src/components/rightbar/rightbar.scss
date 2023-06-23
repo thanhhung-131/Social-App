@@ -9,6 +9,14 @@
         overflow: scroll;
         background-color: themed('bgSoft');
 
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -62,7 +70,7 @@
                         }
 
                         p {
-                            color: themed('textColorSoft');
+                            color: themed('textColorHaftSoft');
                             font-weight: 400;
                         }
 

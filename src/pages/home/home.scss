@@ -19,6 +19,15 @@ body::-webkit-scrollbar-thumb:hover {
 .home {
   @include themify($themes) {
     background-color: themed('bgSoft');
-    padding: 10px 60px;
+    padding: 10px 60px 10px 76px;
+    
+    @include tablet {
+      padding: 20px;
+    }
+    
+    @include mobile {
+      padding: 10px;
+    }
+
   }
 }
