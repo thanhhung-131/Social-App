@@ -10,14 +10,11 @@
     height: 150px;
     gap: 20px;
   }
-  
+
   @include mobile {
     height: 50px;
     justify-content: space-between;
   }
-
-
-  
 
   .story {
     position: relative;
